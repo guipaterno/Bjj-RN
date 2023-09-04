@@ -7,6 +7,7 @@ const styles = StyleSheet.create({
       width:"100%",
       height:"100%",
       padding:20,
+      flex:1,
     },
     containerTempo:{
       backgroundColor:"white",
@@ -21,7 +22,7 @@ const styles = StyleSheet.create({
       fontWeight:"bold",
     },
     viewGeral:{
-        backgroundColor:"white",
+        backgroundColor:"black",
         marginTop:10,
         width:"100%",
         height:240,
@@ -29,9 +30,9 @@ const styles = StyleSheet.create({
     },
 
     atleta1:{
-        backgroundColor:"blue",
+        backgroundColor:"white",
         width:"auto",
-        height:140,
+        height:180,
         flexDirection:"row",
         justifyContent:"space-between",
         marginBottom:20,
@@ -40,49 +41,59 @@ const styles = StyleSheet.create({
 
     
     atleta2:{
-        backgroundColor:"purple",
+        backgroundColor:"rgb(23, 119, 228)",
         width:"auto",
-        height:140,
+        height:180,
         flexDirection:"row",
         justifyContent:"space-between",
+        
 
     },
     pontuacao:{
         width:90,
-        height:"90%",
+        height:"80%",
         marginHorizontal:10,
-        backgroundColor:"green",
+        backgroundColor:" rgb(5, 156, 81)",
     },
     vantagem:{
         width:90,
-        height:"90%",
+        height:"80%",
         marginHorizontal:10,
-        backgroundColor:"yellow",
+        backgroundColor:"rgb(216, 216, 33)",
     },
     punicao:{
         width:90,
-        height:"90%",
+        height:"80%",
         marginHorizontal:10,
-        backgroundColor:"red",
+        backgroundColor:"rgb(233, 24, 24)",
     },
     textoPrincipal:{
         color:"black",
         fontWeight:"bold",
         fontSize:100,
         textAlign:"center",
+       
 
 
     },
-    button:{
+    containerBotao:{
+        justifyContent:"space-around",
+        alignItems:"center",
+        flexDirection:"row",
+        width:"auto",
+        height:200,
+    },
+    botao:{
         width:80,
         height:45,
         justifyContent:"center",
-        alignItems:"center",
         borderRadius:15,
-        marginTop:25,
-        backgroundColor:"gray"
-    }
-  
+        backgroundColor:"gray",
+    },
+    textoBotao:{
+        color:"black",
+        textAlign:"center",
+    },
   });
 
   export default styles;

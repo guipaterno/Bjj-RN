@@ -1,15 +1,28 @@
-import React from 'react';
-import { View, Text } from 'react-native';
-import styles from './styles/styles';
+import React, { useState } from 'react';
+import { View, Text, TouchableOpacity } from 'react-native';
+import styles from '../styles/styles';
+import Score from '../components/Score';
 
+type Props = {
+    textColor:string,
+    
+    
+}
 
-const Pontuacao = () =>{
-    return(
-        <View style={styles.pontuacao}>
-            <Text style={styles.textoPrincipal}>0</Text>
+const Pontuacao = ({textColor}:Props) => {
+  const {scoreAtleta1, addScore1, subScore1, resetScore1} = Score()
 
-        </View>
-    )
+  return (
+    <View style={styles.pontuacao}>
+     
+      <TouchableOpacity onPress={addScore1}onLongPress={subScore1}>
+        <Text style={[styles.textoPrincipal, {color:textColor}]}>{scoreAtleta1}</Text>
+        </TouchableOpacity>
+        
+   
+      
+    </View>
+  );
 }
 
 export default Pontuacao;

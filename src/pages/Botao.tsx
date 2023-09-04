@@ -1,19 +1,26 @@
 import React from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
-import styles from './styles/styles';
+import styles from '../styles/styles';
 
+type PropsBotao ={
+    labelButton:string;
+    onpress:()=>void;
+}
 
 const Botao = ({labelButton, onpress}:PropsBotao)=>{
     return(
+       
+
 <TouchableOpacity
-     style={styles.button}
+     style={styles.botao}
      onPress={onpress}
 >
     <Text
-      style={styles.textBtn}>
+      style={styles.textoBotao}>
       {labelButton}
     </Text>
 </TouchableOpacity>
+        
     )
 }
 

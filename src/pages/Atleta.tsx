@@ -1,28 +1,30 @@
 import React from 'react';
 import { View } from 'react-native';
-import styles from './styles/styles';
+import styles from '../styles/styles';
 import Vantagem from './Vantagem';
 import Punicao from './Punicao';
 import Pontuacao from './Pontuacao';
-import Botao from './Botao';
 
 
 const Atleta = ()=>{
     return(
         <View style={styles.viewGeral}>
+               
             <View style={styles.atleta1}>
-            <Pontuacao/>
-            <Vantagem/>
-            <Punicao/>
+                <Pontuacao textColor="black"/>
+                <Vantagem textColor="black"/>
+                <Punicao textColor="black"/>
             </View>
+
+
             <View style={styles.atleta2}>
-            <Pontuacao />
-            <Vantagem/>
-            <Punicao/>
+                <Pontuacao textColor="white"/>
+                <Vantagem textColor="white"/>
+                <Punicao textColor="white"/>
             </View>
             
-
-            <Botao/>
+           
+       
 
         </View>
     )
